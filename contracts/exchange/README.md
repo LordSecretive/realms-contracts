@@ -7,7 +7,7 @@
 
 ## What is the Emporium?
 
-### The Emporium a traditional AMM with a slight variation. Users can trade up to `n` amount of ERC1155 tokens in one transaction with a ERC20 token!
+### The Emporium is a traditional AMM with a slight variation. Users can trade up to `n` amount of ERC1155 tokens in one transaction with a ERC20 token!
 
 <hr>
 
@@ -15,10 +15,10 @@
 
 The contract is heavily based on the [NiftyswapExchange20.sol contract](https://github.com/0xsequence/niftyswap/blob/master/src/contracts/exchange/NiftyswapExchange20.sol) and its [specifications](https://github.com/0xsequence/niftyswap/blob/master/SPECIFICATIONS.md). 
 
-One deployed contract will handle pairs between the ERC20 currency and all the tokens on an ERC1155.
+One deployed contract will handle pair swaps between the ERC20 currency and multiple ERC1155 tokens.
 Each pair has its price curve tracked individually.
 
-Price changes on one token pair will not affect another.
+Price changes on one token pair will not effect another.
 
 The exchange contract itself is ERC1155 compliant and will issue LP tokens with a token type id corresponding to the token type id in the pair.
 These tokens can then be freely traded or used in other DeFi applications!
